@@ -66,6 +66,12 @@ body {
 .event-head{
     font-size: 25px;
 }
+
+
+.event-img {
+    width: 100%;
+    max-width: 280px;
+}
 .event-text {
     font-size: 18px;
 }
