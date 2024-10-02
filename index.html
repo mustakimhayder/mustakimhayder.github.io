@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sabik.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Sabik- The Explorer</title>
 </head>
 <body>
@@ -14,10 +15,11 @@
                 <div class="nav">
                     <div class="nav-main vc site-user">SABIK</div>
                     <div class="nav-menu nav-flex">
-                        <div class="nav-item active-tab">Home</div>
-                        <div class="nav-item">Research</div>
-                        <div class="nav-item">Interests</div>
-                        <div class="nav-item">Contact</div>
+                        <a href="index.html"><div class="nav-item active-tab">Home</div></a>
+                        <a href="about_me.html"><div class="nav-item">About Me</div></a>
+                        <a href="research.html"><div class="nav-item">Research</div></a>
+                        <a href="portfolio.html"><div class="nav-item">Portfolio</div></a>
+                        <a href="contact.html"><div class="nav-item">Contact</div></a>
                     </div>
                 </div>
                 
@@ -27,85 +29,50 @@
 
     <main>
         <div class="main-card">
-            <div class="limit vc h-10">
-                <h1 class="tr main-line pt-l w-10">I am a good boy.</h1>
+            <div class="limit vc pt-xxl mt-xxs">
+                <h1 class="main-line pt-l w-10 tc mb-0">Md. Mustakim Hayder</h1>
             </div>
+            <p class="tc fs-l pb-xxl mb-0 pbl5">Aspiring Researcher | Laser-Matter Interaction & Computational Materials Science</p>
         </div>
-        <div class="section-head p-l">About Me</div>
-        <div class="section">
-            <div class="flex">
-                <div class="col-md-5 p-m tc">
-                    <div class="w-10 p-m tr">
-                        <img class="event-img" src="sabik.jpg" alt="Profile picture of sabik">
-                    </div>
-                </div>
-                <div class="col-md-7 p-l event-detail">
-                    <div class="event-head pb-m"><b>Mustakim Haydar</b></div>
-                    <div class="event-text">
-                        <div>Hello! I'm Md. Mustakim Hayder, a master's student in the Department of Mechanical Engineering at Bangladesh University of Engineering and Technology, where I also completed my bachelor's degree. My current research focuses on laser-matter interactions, specifically examining how materials respond to high-intensity lasers with ultra-short pulse durations. I'm particularly intrigued by the structural dynamics of materials at the nanoscale under extreme conditions, which are often encountered in advanced manufacturing processes. This work has led me to develop expertise in microscale computational modeling using molecular dynamics.</div>
-                        <div>I'm driven by a relentless pursuit of knowledge, always ready to tackle unfamiliar and challenging topics. This passion for discovery has naturally drawn me towards a research career. My experiences have molded me into a goal-oriented and resilient individual, particularly when facing challenges. I view each obstacle as an opportunity for growth and learning in my ongoing journey of scientific exploration.</div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-head p-l">Research</div>
-        <div class="section">
-            <div class="flex">
-                <div class="col-md-5 p-m tc">
-                    <video height="512" autoplay loop>
-                        <source src="vid_ablation.mp4" type="video/mp4" >
-                      </video> 
-                </div>
-                <div class="col-md-7 p-m event-detail">
-                    <div class="event-head pb-m"><b>Ultrafast laser ablation</b></div>
-                    <div class="event-text">
-                        When metal are irradiated with laser at high fluence under very short pulse duration, huge amount of energy is generated within surface region. The timescale of energy deposition is so small compared to the time required for heat to be conducted away effectively. As a result the material just below the surface still remains relative cold. But as the super hot material above tends to expand a large compressive shock is generated which rapidly travels along depth and causes a tensile rarefaction to follow along. The fragile state of material at extremely high temperature combined with the superimpose rarefaction causes material to eject away a greater speed. This phenomenon is known as ablation. The video the transient pressure profile observed from ablation simulation of Ni. 
+        <div class="main-content">
+            <div class="section-head p-l">Welcome</div>
+            <div class="section">
+                <div class="">
+                    <div class="col-md-7 auto p-xl">
+                        <!-- <div class="event-head pb-m"><b>Mustakim Haydar</b></div> -->
+                        <div class="event-text">
+                            <div>Hello! I'm Md. Mustakim Hayder, a master's student in the Department of Mechanical Engineering at Bangladesh University of Engineering and Technology, where I also completed my bachelor's degree. My current research focuses on laser-matter interactions, specifically examining how materials respond to high-intensity lasers with ultra-short pulse durations. I'm particularly intrigued by the structural dynamics of materials at the nanoscale under extreme conditions, which are often encountered in advanced manufacturing processes. This work has led me to develop expertise in microscale computational modeling using molecular dynamics.</div>
+                            <div class="mt-m">I'm driven by a relentless pursuit of knowledge, always ready to tackle unfamiliar and challenging topics. This passion for discovery has naturally drawn me towards a research career. My experiences have molded me into a goal-oriented and resilient individual, particularly when facing challenges. I view each obstacle as an opportunity for growth and learning in my ongoing journey of scientific exploration.</div>
+
                         </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="section-head p-l">Experience</div>
-        <div class="section">
-            <div class="flex">
-                <div class="col-md-5 p-m tc">
-                    <img class="event-img" src="https://placehold.jp/300x300.png" alt="ALT">
-                </div>
-                <div class="col-md-7 p-l event-detail">
-                    <div class="event-head">Experimental Study of...</div>
-                    <div class="event-text p-m">Some text here...</div>
-                </div>
+            <div class="section-head p-l">Navigation</div>
+            <div class="nav-section limit">
+                <a href="about_me.html"><div class="big-nav-item">
+                    <img class="big-icon" src="res/icons/profile.png" /><span class="maf">About Me</span>
+                </div></a>
+                <a href="research.html"><div class="big-nav-item">
+                    <img class="big-icon" src="res/icons/research.png" /><span class="maf">Research</span>
+                </div></a>
+                <a href="portfolio.html"><div class="big-nav-item">
+                    <img class="big-icon" src="res/icons/portfolio.png" /><span class="maf">Portfolio</span>
+                </div></a>
+                <a href="contact.html"><div class="big-nav-item">
+                    <img class="big-icon" src="res/icons/contacts.png" /><span class="maf">Contact</span>
+                </div></a>
             </div>
-        </div>
 
-        <div class="section-head p-l">Videos</div>
-        <div class="section">
-            <ul>
-                <li>A</li>
-                <li>B</li>
-                <li>C</li>
-                <li>D</li>
-                <li>E</li>
-                <li>F</li>
-            </ul>
-        </div>
 
-        <div class="section-head p-l">Event</div>
-        <div class="section">
-            <ul>
-                <li>A</li>
-                <li>B</li>
-                <li>C</li>
-                <li>D</li>
-                <li>E</li>
-                <li>F</li>
-            </ul>
-        </div>
+        </div>  <!-- Main content end-->
+        
     </main>
 
-    <footer class="p-xxl vc">
-        <h3 class="footer-text">(c) Copyright 2024, Sabik Ahmed Nabik </h3>
+    <footer class="p-s vc">
+        <div class="footer-text">Last Updated: 24 Sept, 2024</div>
     </footer>
     
 </body>

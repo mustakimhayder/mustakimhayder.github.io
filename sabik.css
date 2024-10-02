@@ -20,6 +20,9 @@ body {
 }
 
 
+header {
+    position: sticky; top: 0;
+}
 
 
 
@@ -30,7 +33,7 @@ body {
 
 .limit {
     margin: auto;
-    max-width: 1024px;
+    max-width: 70vw;
 }
 
 
@@ -39,7 +42,9 @@ body {
     /* justify-content: center; */
     align-items: center;
 }
-
+.hc {
+    justify-content: center;
+}
 
 .section-head {
     font-family: 'pd';
@@ -47,14 +52,26 @@ body {
     font-size: 40px;
     text-align: center;
     color: white;
+    max-width: 70vw;
+    margin: auto;
 
 }
 
 
+.nav-menu > a { color: white; text-decoration: none;}
+
+main {
+    /* padding-bottom: 3em; */
+}
 
 .main-line {
     font-size: 4em;
     font-family: "pd";
+
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -72,6 +89,18 @@ body {
     width: 100%;
     max-width: 280px;
 }
+
+
+
+.event-img-v1 {
+    width: 100%;
+}
+
+.event-img-wide {
+    width: 100%;
+    max-width: 420px;
+}
+
 .event-text {
     font-size: 18px;
 }
@@ -91,7 +120,8 @@ body {
 
 .section { 
     margin: auto;
-    max-width: 1024px;
+    max-width: 70vw;
+    background: #c9e1ffbd;
 }
 
 .nav {
@@ -107,11 +137,11 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 1em;
-
 }
 
 .nav-item {
-padding: 0.5em 0.25em
+padding: 0.5em 0.25em;
+font-size: 1.3em;
 }
 
 .active-tab {
@@ -120,15 +150,30 @@ padding: 0.5em 0.25em
 
 
 .main-card {
-    height: 200px;
     background-image: url("bg.png"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
-    height: 320px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+
+.main-content {
+    background-image:     linear-gradient(
+        rgba(255, 255, 255, 0.45), 
+        rgba(255, 255, 255, 0.45)
+      ),url("sabik_bg.png"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom:  3em;
+    /* filter: blur(8px);
+    -webkit-filter: blur(4px); */
+
+    
+}
 
 
 .site-user {
@@ -136,12 +181,10 @@ padding: 0.5em 0.25em
     font-family: "pd";
 }
 footer {
-    margin-top: 4em;
-    border-top: 2em solid rgb(107, 168, 218);
     background-color: #546e7a;
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .footer-text {
@@ -153,6 +196,75 @@ footer {
 
 
 
+.pbl5 {
+    padding-bottom: 5rem;
+}
+
+.leftbar {
+    border-left: 5px solid black;
+    padding-left: 1em;
+    margin-left: 2em;
+}
+
+
+.ci {
+    display: none;
+}
+
+.active-image {
+    display: inline-block;
+}
+
+
+.big-nav-item {
+    color: #333;
+    width: 100%;
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    background-color: #c9e1ffbd; /*#7bbafdd6; */
+    font-size: 3em;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #3a3a3a;
+    padding: 0.2em;
+    transition: all 0.3s;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: top;
+}
+.big-nav-item:hover {
+    transform: scale(1.1);
+    background-color: #c9e1ff;
+}
 
 
 
+.big-icon {
+    width: 3em;
+    vertical-align: baseline;
+}
+
+
+.maf {
+    margin: auto 0;
+}
+
+.nav-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.bg-research {
+    background-image: url("res/banner/rese.jpg"); /* The image used */
+}
+.bg-contacts {
+    background-image: url("res/banner/contacts.jpg"); /* The image used */
+}
+.bg-profile {
+    background-image: url("res/banner/profe.png"); /* The image used */
+}
+.bg-portfolio {
+    background-image: url("res/banner/port.png"); /* The image used */
+}
