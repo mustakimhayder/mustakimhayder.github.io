@@ -79,16 +79,11 @@ a {
 display: inline-block;
 text-decoration: none;
 color: blue;
-padding: 2px 2px;
-transition: font-size 0.3s ease;
+padding: 2px 4px;
+transition: color 0.3s ease;
 }
 .custom-link:hover {
-font-size: 1.1em;
-}
-.custom-link::after {
-content: "\2197";
-margin-left: 6px;
-display: inline-block;
+color: darkblue;
 }
 /**/
 
