@@ -76,7 +76,7 @@ main {
 
 a {
 text-decoration: none;
-color: blue;
+color: blue!important;
 position: relative;
 padding-left: 20px;
 }
