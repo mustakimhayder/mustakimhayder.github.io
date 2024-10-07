@@ -70,8 +70,22 @@ main {
 
 }
 
-a {
+/* a {
     text-decoration: none;
+} */
+
+a {
+text-decoration: none;
+color: blue;
+position: relative;
+padding-left: 20px;
+}
+a::before {
+content: "\1F517";
+position: absolute;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
 }
 
 
